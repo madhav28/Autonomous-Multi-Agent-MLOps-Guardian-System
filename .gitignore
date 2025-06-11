@@ -1,0 +1,73 @@
+# ─────────────────────────────────────────────
+# 1. Python + general development cruft
+# ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# VS Code / PyCharm / JetBrains helpers
+.vscode/
+.idea/
+
+# Virtual-envs & poetry
+.venv/
+env/
+*.envrc
+
+# Jupyter & IPython
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs & local debug dumps
+*.log
+*.tmp
+*.out
+*.DS_Store
+
+# ─────────────────────────────────────────────
+# 2. Application-specific artefacts
+# ─────────────────────────────────────────────
+# Data that changes on every run
+data/logs/
+data/tmp/
+
+# Model binaries & large artefacts
+models/
+*.pkl
+*.joblib
+*.onnx
+*.pt
+*.ckpt
+*.h5
+*.gguf
+
+# Evidently JSON/HTML reports (can be huge)
+**/evidently_report_*.{json,html}
+
+# Prefect / MLflow local metadata
+prefect/
+mlruns/
+
+# ─────────────────────────────────────────────
+# 3. Secrets & user-specific configs
+# ─────────────────────────────────────────────
+.env          # API keys, DB strings, etc.
+*.secret
+*.key
+*.pem
+
+# ─────────────────────────────────────────────
+# 4. Containers & build cache
+# ─────────────────────────────────────────────
+*.tar
+*.jar
+*.war
+*.img
+*.sqlite3
+.cache/
+docker-compose.override.yml
+

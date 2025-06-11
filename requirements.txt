@@ -1,0 +1,10 @@
+langchain
+openai
+evidently
+fastapi
+uvicorn
+prefect
+pydantic
+watchdog
+rich
+scikit-learn
