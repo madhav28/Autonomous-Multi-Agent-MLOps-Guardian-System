@@ -28,7 +28,7 @@ mlops-guardian-agent/
 │   └── orchestrator.py   ← entry‑point
 ├── pipelines/
 │   └── training_pipeline.py
-├── app/                # optional FastAPI service
+├── app/                # FastAPI service
 │   └── main.py
 ├── data/
 │   ├── ref/            # ONE reference CSV goes here
@@ -144,7 +144,3 @@ docker run -it -v $(pwd)/data:/app/data guardian
 * **Message bus** — swap `multiprocessing.Queue` for Redis, Kafka, or Prefect Orion to distribute across machines.
 
 ---
-
-## License
-
-MIT — do with it what you like. If you build something cool, let me know! 🎉
